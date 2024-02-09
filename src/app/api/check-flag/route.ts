@@ -10,7 +10,7 @@ export async function POST(request: NextRequest) {
     if (userIdCookie) {
       if (userId === '991') {
         return new NextResponse(
-          JSON.stringify({ message: 'CODE_CTF{CooKIES_in_rEQuests}' }),
+          JSON.stringify({ message: 'CODE_CTF{Prime_NUmBERS_ROCK}' }),
           { status: 200 }
         );
       } else {

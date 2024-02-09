@@ -27,6 +27,17 @@ export async function POST(request: NextRequest) {
         maxAge: 60 * 60 * 24 * 1000,
       });
       return response;
+    } else if (user === 'code_tom' && password === 'new_campus') {
+      const response = NextResponse.json({}, { status: 200 });
+      response.cookies.set({
+        name: 'userId',
+        value: '701',
+        httpOnly: true,
+        secure: true,
+        sameSite: 'strict',
+        maxAge: 60 * 60 * 24 * 1000,
+      });
+      return response;
     } else {
       return new NextResponse(JSON.stringify({ message: 'Login failed' }), {
         status: 401,

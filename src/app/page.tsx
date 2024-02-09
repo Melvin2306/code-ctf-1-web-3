@@ -50,7 +50,7 @@ export default function Home() {
             Welcome to the CODE founder platform
           </h1>
           <p className="mb-8">
-            Try logging in with the following credentials:
+            Try finding the flag! Maybe these credentials will help you:
             <br />
             <br />
             <strong>Username:</strong> code_manuel
@@ -63,10 +63,11 @@ export default function Home() {
             <strong>Password:</strong> party_animal
             <br />
             <br />
-            Try logging in with the following account to find the flag:
-            <br />
-            <br />
             <strong>Username:</strong> code_tom
+            <br />
+            <strong>Password:</strong> new_campus
+            <br />
+            <br />
           </p>
           <div className="flex space-x-4">
             <input
@@ -94,7 +95,7 @@ export default function Home() {
                 onClick={checkFlag}
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
               >
-                Check Flag
+                Get Flag
               </button>
             </div>
           </div>
